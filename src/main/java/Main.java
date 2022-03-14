@@ -1,10 +1,18 @@
+import java.util.Scanner;
+
 public class Main{
 
     public static void main(String[] args) {
 
-        Account user2 = new Account();
-        user2.openAccount();
-        user2.showAccount();
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Ilu użytkownikow chcesz dodaż?");
+        int numberOfNewAccounts = scanner.nextInt();
+        Account tableOfNewAccouts[] = new Account[numberOfNewAccounts];
+
+        for (int i=0; i< tableOfNewAccouts.length; i++){
+            tableOfNewAccouts[i] = new Account();
+            tableOfNewAccouts[i].openAccount();
+        }
     }
 }

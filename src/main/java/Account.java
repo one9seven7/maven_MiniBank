@@ -8,7 +8,7 @@ public class Account {
 
     Scanner scanner = new Scanner(System.in);
 
-    public Account(int accountNo, String accountName, String accountSurname, int balance){
+    public Account(int accountNo, String accountName, String accountSurname, int balance) {
         this.accountNo = accountNo;
         this.accountName = accountName;
         this.accountSurname = accountSurname;
@@ -27,7 +27,7 @@ public class Account {
         this.accountNo = accountNo;
     }
 
-    public void openAccount(){
+    public void openAccount() {
         System.out.println("Id");
         accountNo = scanner.nextInt();
         System.out.println("Podaj Imie");
@@ -38,7 +38,7 @@ public class Account {
         balance = scanner.nextInt();
     }
 
-    public void showAccount(){
+    public void showAccount() {
         System.out.println("Name is: " + accountName + " Surname is: " + accountSurname + " Your balance is: " + balance + ".");
     }
 }
