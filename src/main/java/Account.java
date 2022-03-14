@@ -37,4 +37,9 @@ public class Account {
         System.out.println("Podaj stan konta");
         balance = scanner.nextInt();
     }
+
+    public void showAccount(){
+        System.out.println("Name is: " + accountName + " Surname is: " + accountSurname + " Your balance is: " + balance + ".");
+    }
 }
+
